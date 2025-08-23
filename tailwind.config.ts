@@ -78,6 +78,10 @@ export default {
 				cream: 'hsl(var(--cream))',
 				'warm-white': 'hsl(var(--warm-white))'
 			},
+			boxShadow: {
+				'elegant': '0 10px 30px -10px hsl(var(--burgundy) / 0.2)',
+				'gold': '0 0 20px hsl(var(--gold) / 0.3)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
