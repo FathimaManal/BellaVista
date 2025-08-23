@@ -7,121 +7,123 @@ const Menu = () => {
   const [activeCategory, setActiveCategory] = useState('starters');
 
   const categories = [
-    { id: 'starters', name: 'Antipasti' },
+    { id: 'starters', name: 'Appetizers' },
     { id: 'mains', name: 'Main Course' },
-    { id: 'desserts', name: 'Dolci' },
+    { id: 'desserts', name: 'Desserts' },
     { id: 'beverages', name: 'Beverages' }
   ];
 
   const menuItems = {
     starters: [
       {
-        name: 'Bruschetta Bella Vista',
-        description: 'Toasted bread with fresh tomatoes, basil, and garlic',
-        price: '$12',
+        name: 'Samosa Chaat',
+        description: 'Crispy samosas topped with yogurt, chutneys, and sev',
+        price: '₹180',
         vegetarian: true
       },
       {
-        name: 'Antipasto Misto',
-        description: 'Selection of cured meats, cheeses, and marinated vegetables',
-        price: '$18',
+        name: 'Tandoori Chicken Wings',
+        description: 'Spiced chicken wings marinated in yogurt and tandoori masala',
+        price: '₹320',
         popular: true
       },
       {
-        name: 'Burrata Caprese',
-        description: 'Creamy burrata with heirloom tomatoes and basil oil',
-        price: '$16',
+        name: 'Paneer Tikka',
+        description: 'Grilled cottage cheese cubes with bell peppers and onions',
+        price: '₹280',
         vegetarian: true
       },
       {
-        name: 'Carpaccio di Manzo',
-        description: 'Thinly sliced beef with arugula, capers, and parmesan',
-        price: '$20'
+        name: 'Seekh Kebab',
+        description: 'Spiced minced lamb skewers grilled in tandoor',
+        price: '₹380'
       }
     ],
     mains: [
       {
-        name: 'Osso Buco alla Milanese',
-        description: 'Braised veal shanks with saffron risotto',
-        price: '$38',
+        name: 'Butter Chicken',
+        description: 'Tender chicken in creamy tomato and cashew gravy',
+        price: '₹420',
         popular: true
       },
       {
-        name: 'Pasta Bella Vista',
-        description: 'House-made tagliatelle with truffle cream sauce',
-        price: '$28',
+        name: 'Dal Makhani',
+        description: 'Slow-cooked black lentils with butter and cream',
+        price: '₹280',
         vegetarian: true
       },
       {
-        name: 'Branzino in Crosta',
-        description: 'Mediterranean sea bass in herb crust with lemon butter',
-        price: '$34'
+        name: 'Fish Curry',
+        description: 'Fresh fish in coconut curry with aromatic spices',
+        price: '₹480'
       },
       {
-        name: 'Pollo Parmigiana',
-        description: 'Breaded chicken breast with mozzarella and tomato sauce',
-        price: '$26'
+        name: 'Chicken Biryani',
+        description: 'Fragrant basmati rice layered with spiced chicken',
+        price: '₹380'
       },
       {
-        name: 'Risotto ai Porcini',
-        description: 'Creamy arborio rice with wild mushrooms and truffle oil',
-        price: '$24',
+        name: 'Paneer Makhani',
+        description: 'Cottage cheese in rich tomato and cashew gravy',
+        price: '₹320',
         vegetarian: true
       }
     ],
     desserts: [
       {
-        name: 'Tiramisu della Casa',
-        description: 'Classic tiramisu with espresso-soaked ladyfingers',
-        price: '$12',
+        name: 'Gulab Jamun',
+        description: 'Soft milk dumplings soaked in cardamom sugar syrup',
+        price: '₹120',
         popular: true
       },
       {
-        name: 'Panna Cotta ai Frutti di Bosco',
-        description: 'Vanilla panna cotta with mixed berry compote',
-        price: '$10',
+        name: 'Kulfi Falooda',
+        description: 'Traditional ice cream with vermicelli and rose syrup',
+        price: '₹150',
         vegetarian: true
       },
       {
-        name: 'Cannoli Siciliani',
-        description: 'Crispy shells filled with sweet ricotta and chocolate chips',
-        price: '$9',
+        name: 'Ras Malai',
+        description: 'Cottage cheese dumplings in sweetened milk with nuts',
+        price: '₹140',
         vegetarian: true
       },
       {
-        name: 'Gelato Artigianale',
-        description: 'House-made gelato - ask for today\'s flavors',
-        price: '$8',
+        name: 'Kheer',
+        description: 'Creamy rice pudding with cardamom and dry fruits',
+        price: '₹110',
         vegetarian: true
       }
     ],
     beverages: [
       {
-        name: 'Italian Wine Selection',
-        description: 'Curated selection from renowned Italian vineyards',
-        price: '$12-45',
+        name: 'Masala Chai',
+        description: 'Traditional spiced tea with cardamom, ginger, and cloves',
+        price: '₹60',
         popular: true
       },
       {
-        name: 'Espresso',
-        description: 'Traditional Italian espresso',
-        price: '$4'
-      },
-      {
-        name: 'Cappuccino',
-        description: 'Rich espresso with steamed milk and foam',
-        price: '$5'
-      },
-      {
-        name: 'Limonata',
-        description: 'Fresh lemon soda with mint',
-        price: '$6',
+        name: 'Fresh Lime Soda',
+        description: 'Refreshing lime juice with soda and black salt',
+        price: '₹80',
         vegetarian: true
       },
       {
-        name: 'Aperol Spritz',
-        description: 'Classic Italian aperitif with prosecco',
-        price: '$12'
+        name: 'Mango Lassi',
+        description: 'Creamy yogurt drink blended with fresh mango',
+        price: '₹120',
+        vegetarian: true
+      },
+      {
+        name: 'Thandai',
+        description: 'Cooling drink with almonds, fennel, and rose petals',
+        price: '₹100',
+        vegetarian: true
+      },
+      {
+        name: 'Filter Coffee',
+        description: 'South Indian style coffee with frothy milk',
+        price: '₹70'
       }
     ]
   };
@@ -135,7 +137,7 @@ const Menu = () => {
             Our Menu
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover authentic Italian flavors crafted with passion and the finest ingredients
+            Discover authentic Indian flavors crafted with traditional spices and recipes
           </p>
         </div>
 
