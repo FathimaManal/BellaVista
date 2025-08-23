@@ -12,7 +12,7 @@ const About = () => {
             Our Story
           </h1>
           <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            A journey of passion, tradition, and the authentic flavors of Italy
+            A journey of passion, tradition, and the authentic flavors of India
           </p>
         </div>
       </section>
@@ -23,22 +23,22 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-playfair font-bold text-primary mb-6">
-                Bella Vista's Beginning
+                Spice Garden's Beginning
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p>
-                  Founded in 1985 by the Rossi family, Bella Vista began as a dream to bring 
-                  the authentic flavors of their hometown in Tuscany to our city. What started 
+                  Founded in 1985 by the Sharma family, Spice Garden began as a dream to bring 
+                  the authentic flavors of their hometown in Mumbai to our city. What started 
                   as a small family restaurant has grown into a beloved culinary destination.
                 </p>
                 <p>
-                  Our commitment to traditional Italian cuisine, combined with the finest 
-                  locally-sourced ingredients, has made Bella Vista a cornerstone of the 
+                  Our commitment to traditional Indian cuisine, combined with the finest 
+                  locally-sourced ingredients, has made Spice Garden a cornerstone of the 
                   community for nearly four decades.
                 </p>
                 <p>
                   Every dish tells a story of heritage, passion, and the time-honored recipes 
-                  passed down through generations of the Rossi family.
+                  passed down through generations of the Sharma family.
                 </p>
               </div>
             </div>
@@ -48,7 +48,7 @@ const About = () => {
                   <CardContent className="pt-6">
                     <Award className="h-12 w-12 text-gold mx-auto mb-4" />
                     <h3 className="font-playfair font-semibold text-primary">Award Winning</h3>
-                    <p className="text-sm text-muted-foreground">Best Italian Restaurant 2023</p>
+                    <p className="text-sm text-muted-foreground">Best Indian Restaurant 2023</p>
                   </CardContent>
                 </Card>
                 <Card className="card-elegant text-center">
@@ -86,7 +86,7 @@ const About = () => {
               Meet Our Executive Chef
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The culinary genius behind Bella Vista's exceptional cuisine
+              The culinary genius behind Spice Garden's exceptional cuisine
             </p>
           </div>
 
@@ -94,32 +94,32 @@ const About = () => {
             <div className="text-center lg:text-left">
               <img 
                 src={chefImage} 
-                alt="Chef Marco Rossi" 
+                alt="Chef Arjun Sharma" 
                 className="w-80 h-96 object-cover rounded-2xl shadow-elegant mx-auto lg:mx-0"
               />
             </div>
             <div>
               <h3 className="text-3xl font-playfair font-bold text-primary mb-4">
-                Chef Marco Rossi
+                Chef Arjun Sharma
               </h3>
               <p className="text-xl text-gold mb-6">Executive Chef & Owner</p>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Chef Marco Rossi, grandson of Bella Vista's founder, brings over 20 years 
+                  Chef Arjun Sharma, grandson of Spice Garden's founder, brings over 20 years 
                   of culinary expertise to every dish. Trained in the finest kitchens of 
-                  Milan and Rome, he returned to lead the family business with a vision 
+                  Mumbai and Delhi, he returned to lead the family business with a vision 
                   of honoring tradition while embracing innovation.
                 </p>
                 <p>
-                  Under his leadership, Bella Vista has earned numerous accolades, including 
-                  "Best Italian Restaurant" for three consecutive years. Chef Marco's 
+                  Under his leadership, Spice Garden has earned numerous accolades, including 
+                  "Best Indian Restaurant" for three consecutive years. Chef Arjun's 
                   philosophy centers on using the freshest local ingredients to create 
-                  dishes that transport guests straight to the heart of Italy.
+                  dishes that transport guests straight to the heart of India.
                 </p>
                 <p>
-                  When he's not in the kitchen, Chef Marco travels to Italy twice a year 
+                  When he's not in the kitchen, Chef Arjun travels to India twice a year 
                   to discover new recipes and maintain relationships with local producers 
-                  who supply our authentic Italian ingredients.
+                  who supply our authentic Indian spices and ingredients.
                 </p>
               </div>
 
@@ -135,9 +135,9 @@ const About = () => {
                 <div>
                   <h4 className="font-semibold text-primary mb-2">Specialties</h4>
                   <ul className="text-sm text-muted-foreground space-y-1">
-                    <li>• Hand-made Pasta</li>
-                    <li>• Osso Buco Milanese</li>
-                    <li>• Truffle Risotto</li>
+                    <li>• Hyderabadi Biryani</li>
+                    <li>• Tandoori Specialties</li>
+                    <li>• Dal Makhani</li>
                   </ul>
                 </div>
               </div>
@@ -154,7 +154,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do at Bella Vista
+              The principles that guide everything we do at Spice Garden
             </p>
           </div>
 
@@ -168,8 +168,8 @@ const About = () => {
                   Authenticity
                 </h3>
                 <p className="text-muted-foreground">
-                  We stay true to traditional Italian recipes and cooking methods, 
-                  ensuring every dish reflects the authentic flavors of Italy.
+                  We stay true to traditional Indian recipes and cooking methods, 
+                  ensuring every dish reflects the authentic flavors of India.
                 </p>
               </CardContent>
             </Card>
@@ -223,11 +223,11 @@ const About = () => {
                   <div className="space-y-2 text-muted-foreground">
                     <p className="flex items-center justify-center md:justify-start">
                       <MapPin className="h-5 w-5 mr-2 text-gold" />
-                      123 Italian Way
+                      123 Spice Street
                     </p>
                     <p className="text-center md:text-left">Culinary District, City 12345</p>
                     <p className="text-center md:text-left">
-                      Located in the heart of the historic culinary district, 
+                      Located in the heart of the historic spice district, 
                       just steps from downtown's main attractions.
                     </p>
                   </div>
@@ -238,7 +238,7 @@ const About = () => {
                   </h3>
                   <div className="space-y-2 text-muted-foreground text-center md:text-left">
                     <p>• Complimentary valet parking available</p>
-                    <p>• Street parking on Italian Way</p>
+                    <p>• Street parking on Spice Street</p>
                     <p>• Metro Station: Culinary District (2 blocks)</p>
                     <p>• Bus routes 15, 22, 44 stop nearby</p>
                   </div>

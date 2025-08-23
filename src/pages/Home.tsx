@@ -11,13 +11,13 @@ const Home = () => {
 
   const testimonials = [
     {
-      name: "Maria Rodriguez",
-      text: "Absolutely divine! The pasta was perfection and the ambiance was magical. Bella Vista exceeded all expectations.",
+      name: "Priya Sharma",
+      text: "Absolutely divine! The biryani was perfection and the ambiance was magical. Spice Garden exceeded all expectations.",
       rating: 5
     },
     {
       name: "James Wilson",
-      text: "An authentic Italian experience in the heart of the city. The chef's attention to detail is remarkable.",
+      text: "An authentic Indian experience in the heart of the city. The chef's attention to detail is remarkable.",
       rating: 5
     },
     {
@@ -45,10 +45,10 @@ const Home = () => {
       >
         <div className="max-w-4xl mx-auto px-4 text-white">
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 fade-in">
-            Bella Vista
+            Spice Garden
           </h1>
           <p className="text-xl md:text-2xl mb-8 fade-in">
-            Authentic Italian Cuisine in an Elegant Setting
+            Authentic Indian Cuisine in an Elegant Setting
           </p>
           <div className="space-x-4 fade-in">
             <Link to="/menu">
@@ -70,10 +70,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-primary mb-4">
-              Why Choose Bella Vista
+              Why Choose Spice Garden
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Experience the perfect blend of traditional Italian flavors and modern culinary artistry
+              Experience the perfect blend of traditional Indian flavors and modern culinary artistry
             </p>
           </div>
 
@@ -83,7 +83,7 @@ const Home = () => {
                 <ChefHat className="h-16 w-16 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-playfair font-semibold mb-4">Expert Chefs</h3>
                 <p className="text-muted-foreground">
-                  Our master chefs bring decades of experience from the finest kitchens of Italy
+                  Our master chefs bring decades of experience from the finest kitchens of India
                 </p>
               </CardContent>
             </Card>
@@ -93,7 +93,7 @@ const Home = () => {
                 <Award className="h-16 w-16 text-primary mx-auto mb-4" />
                 <h3 className="text-2xl font-playfair font-semibold mb-4">Award Winning</h3>
                 <p className="text-muted-foreground">
-                  Recognized for excellence in cuisine, service, and authentic Italian dining experience
+                  Recognized for excellence in cuisine, service, and authentic Indian dining experience
                 </p>
               </CardContent>
             </Card>
@@ -117,25 +117,25 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-4xl font-playfair font-bold text-primary mb-6">
-                Signature Pasta
+                Signature Biryani
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                Our signature handmade pasta with locally sourced ingredients, prepared with 
+                Our signature aromatic biryani with carefully sourced spices, prepared with 
                 traditional techniques passed down through generations. Each plate is a testament 
-                to our commitment to authentic Italian cuisine.
+                to our commitment to authentic Indian cuisine.
               </p>
               <div className="space-y-2 mb-8">
                 <p className="flex items-center text-muted-foreground">
                   <Star className="h-5 w-5 text-gold mr-2" />
-                  Fresh pasta made daily
+                  Fresh spices ground daily
                 </p>
                 <p className="flex items-center text-muted-foreground">
                   <Star className="h-5 w-5 text-gold mr-2" />
-                  Organic, locally sourced ingredients
+                  Premium basmati rice
                 </p>
                 <p className="flex items-center text-muted-foreground">
                   <Star className="h-5 w-5 text-gold mr-2" />
-                  Traditional Italian recipes
+                  Traditional Indian recipes
                 </p>
               </div>
               <Link to="/menu">
@@ -147,7 +147,7 @@ const Home = () => {
             <div className="order-1 lg:order-2">
               <img 
                 src={pastaImage} 
-                alt="Signature pasta dish" 
+                alt="Signature biryani dish" 
                 className="w-full rounded-2xl shadow-elegant"
               />
             </div>
@@ -203,7 +203,7 @@ const Home = () => {
             Ready for an Unforgettable Experience?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Reserve your table today and discover why Bella Vista is the premier destination for Italian cuisine
+            Reserve your table today and discover why Spice Garden is the premier destination for Indian cuisine
           </p>
           <Link to="/reservations">
             <Button className="btn-gold text-lg px-8 py-4">

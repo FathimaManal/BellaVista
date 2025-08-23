@@ -16,9 +16,9 @@ const Menu = () => {
   const menuItems = {
     starters: [
       {
-        name: 'Samosa Chaat',
-        description: 'Crispy samosas topped with yogurt, chutneys, and sev',
-        price: '₹180',
+        name: 'Aloo Tikki',
+        description: 'Crispy potato cutlets served with mint and tamarind chutney',
+        price: '₹150',
         vegetarian: true
       },
       {
