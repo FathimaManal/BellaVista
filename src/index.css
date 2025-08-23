@@ -1,42 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Bella Vista Restaurant Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core restaurant brand colors */
+    --background: 45 20% 97%;
+    --foreground: 15 25% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 30% 98%;
+    --card-foreground: 15 25% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 30% 98%;
+    --popover-foreground: 15 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Rich burgundy primary */
+    --primary: 350 65% 25%;
+    --primary-foreground: 45 20% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Warm gold secondary */
+    --secondary: 45 85% 60%;
+    --secondary-foreground: 15 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Soft cream muted */
+    --muted: 45 30% 92%;
+    --muted-foreground: 15 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Gold accent */
+    --accent: 45 85% 55%;
+    --accent-foreground: 15 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 45 20% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 20% 85%;
+    --input: 45 20% 90%;
+    --ring: 350 65% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Custom restaurant colors */
+    --burgundy: 350 65% 25%;
+    --burgundy-light: 350 45% 35%;
+    --gold: 45 85% 55%;
+    --gold-light: 45 85% 65%;
+    --cream: 45 30% 96%;
+    --warm-white: 45 20% 97%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--burgundy)) 0%, hsl(var(--burgundy-light)) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--gold-light)) 100%);
+    --gradient-overlay: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--burgundy) / 0.2);
+    --shadow-gold: 0 0 20px hsl(var(--gold) / 0.3);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +124,50 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+@layer components {
+  /* Hero button variant */
+  .btn-hero {
+    @apply bg-gradient-to-r from-burgundy to-burgundy-light text-primary-foreground font-semibold px-8 py-4 rounded-xl hover:shadow-elegant transition-all duration-300 hover:scale-105;
+  }
+
+  /* Gold button variant */
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold to-gold-light text-accent-foreground font-semibold px-6 py-3 rounded-lg hover:shadow-gold transition-all duration-300;
+  }
+
+  /* Elegant card */
+  .card-elegant {
+    @apply bg-card backdrop-blur-sm border border-border/50 rounded-xl p-6 shadow-elegant hover:shadow-xl transition-all duration-300;
+  }
+
+  /* Navigation link hover effect */
+  .nav-link {
+    @apply relative font-medium text-foreground hover:text-primary transition-colors duration-300;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-burgundy to-gold transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+  }
+
+  .fade-in.visible {
+    @apply opacity-100 translate-y-0;
   }
 }
