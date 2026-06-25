@@ -291,8 +291,8 @@ const Reservations = () => {
                 <div>
                   <h4 className="font-semibold text-primary">Location</h4>
                   <p className="text-muted-foreground">
-                    123 Italian Way<br />
-                    Culinary District, City 12345
+                    12 Bazaar Lane<br />
+                    Culinary Quarter, City 12345
                   </p>
                 </div>
               </CardContent>

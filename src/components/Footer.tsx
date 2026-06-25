@@ -9,13 +9,13 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-3xl font-playfair font-bold mb-4">Bella Vista</h3>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
-              Experience authentic Italian cuisine in an elegant atmosphere. 
+              Experience authentic Indian cuisine in an elegant atmosphere.
               Where tradition meets innovation, and every meal is a celebration.
             </p>
             <div className="space-y-2">
               <div className="flex items-center text-primary-foreground/80">
                 <MapPin className="h-5 w-5 mr-3" />
-                <span>123 Italian Way, Culinary District, City 12345</span>
+                <span>12 Bazaar Lane, Culinary Quarter, City 12345</span>
               </div>
               <div className="flex items-center text-primary-foreground/80">
                 <Phone className="h-5 w-5 mr-3" />

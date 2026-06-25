@@ -217,8 +217,8 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-primary">Address</h3>
                     <p className="text-muted-foreground">
-                      123 Italian Way<br />
-                      Culinary District, City 12345
+                      12 Bazaar Lane<br />
+                      Culinary Quarter, City 12345
                     </p>
                   </div>
                 </div>
@@ -272,7 +272,7 @@ const Contact = () => {
                       Interactive map would be embedded here
                     </p>
                     <p className="text-sm text-muted-foreground">
-                      123 Italian Way, Culinary District
+                      12 Bazaar Lane, Culinary Quarter
                     </p>
                   </div>
                 </div>

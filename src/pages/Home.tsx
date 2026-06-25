@@ -12,7 +12,7 @@ const Home = () => {
   const testimonials = [
     {
       name: "Priya Sharma",
-      text: "Absolutely divine! The biryani was perfection and the ambiance was magical. Spice Garden exceeded all expectations.",
+      text: "Absolutely divine! The biryani was perfection and the ambiance was magical. Bella Vista exceeded all expectations.",
       rating: 5
     },
     {
@@ -45,7 +45,7 @@ const Home = () => {
       >
         <div className="max-w-4xl mx-auto px-4 text-white">
           <h1 className="text-5xl md:text-7xl font-playfair font-bold mb-6 fade-in">
-            Spice Garden
+            Bella Vista
           </h1>
           <p className="text-xl md:text-2xl mb-8 fade-in">
             Authentic Indian Cuisine in an Elegant Setting
@@ -70,7 +70,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-playfair font-bold text-primary mb-4">
-              Why Choose Spice Garden
+              Why Choose Bella Vista
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Experience the perfect blend of traditional Indian flavors and modern culinary artistry
@@ -203,7 +203,7 @@ const Home = () => {
             Ready for an Unforgettable Experience?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            Reserve your table today and discover why Spice Garden is the premier destination for Indian cuisine
+            Reserve your table today and discover why Bella Vista is the premier destination for Indian cuisine
           </p>
           <Link to="/reservations">
             <Button className="btn-gold text-lg px-8 py-4">

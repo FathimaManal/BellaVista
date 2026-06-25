@@ -23,17 +23,17 @@ const About = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-playfair font-bold text-primary mb-6">
-                Spice Garden's Beginning
+                Bella Vista's Beginning
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p>
-                  Founded in 1985 by the Sharma family, Spice Garden began as a dream to bring 
+                  Founded in 1985 by the Sharma family, Bella Vista began as a dream to bring 
                   the authentic flavors of their hometown in Mumbai to our city. What started 
                   as a small family restaurant has grown into a beloved culinary destination.
                 </p>
                 <p>
                   Our commitment to traditional Indian cuisine, combined with the finest 
-                  locally-sourced ingredients, has made Spice Garden a cornerstone of the 
+                  locally-sourced ingredients, has made Bella Vista a cornerstone of the 
                   community for nearly four decades.
                 </p>
                 <p>
@@ -86,7 +86,7 @@ const About = () => {
               Meet Our Executive Chef
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The culinary genius behind Spice Garden's exceptional cuisine
+              The culinary genius behind Bella Vista's exceptional cuisine
             </p>
           </div>
 
@@ -105,13 +105,13 @@ const About = () => {
               <p className="text-xl text-gold mb-6">Executive Chef & Owner</p>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  Chef Arjun Sharma, grandson of Spice Garden's founder, brings over 20 years 
+                  Chef Arjun Sharma, grandson of Bella Vista's founder, brings over 20 years 
                   of culinary expertise to every dish. Trained in the finest kitchens of 
                   Mumbai and Delhi, he returned to lead the family business with a vision 
                   of honoring tradition while embracing innovation.
                 </p>
                 <p>
-                  Under his leadership, Spice Garden has earned numerous accolades, including 
+                  Under his leadership, Bella Vista has earned numerous accolades, including 
                   "Best Indian Restaurant" for three consecutive years. Chef Arjun's 
                   philosophy centers on using the freshest local ingredients to create 
                   dishes that transport guests straight to the heart of India.
@@ -154,7 +154,7 @@ const About = () => {
               Our Values
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do at Spice Garden
+              The principles that guide everything we do at Bella Vista
             </p>
           </div>
 
@@ -223,11 +223,11 @@ const About = () => {
                   <div className="space-y-2 text-muted-foreground">
                     <p className="flex items-center justify-center md:justify-start">
                       <MapPin className="h-5 w-5 mr-2 text-gold" />
-                      123 Spice Street
+                      12 Bazaar Lane
                     </p>
-                    <p className="text-center md:text-left">Culinary District, City 12345</p>
+                    <p className="text-center md:text-left">Culinary Quarter, City 12345</p>
                     <p className="text-center md:text-left">
-                      Located in the heart of the historic spice district, 
+                      Located in the heart of the city's vibrant culinary quarter,
                       just steps from downtown's main attractions.
                     </p>
                   </div>
@@ -238,7 +238,7 @@ const About = () => {
                   </h3>
                   <div className="space-y-2 text-muted-foreground text-center md:text-left">
                     <p>• Complimentary valet parking available</p>
-                    <p>• Street parking on Spice Street</p>
+                    <p>• Street parking on Bazaar Lane</p>
                     <p>• Metro Station: Culinary District (2 blocks)</p>
                     <p>• Bus routes 15, 22, 44 stop nearby</p>
                   </div>
